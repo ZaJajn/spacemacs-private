@@ -14,5 +14,7 @@ mv styleguide google-style
 # return ~
 cd ~
 git clone https://github.com/ZaJajn/spacemacs-private.git
-mkdir ~/.spacemacs.d/
+mkdir -p ~/.spacemacs.d/layers
 mv spacemacs-private/init.el ~/.spacemacs.d/
+cd ~
+rm -rf spacemacs-private
