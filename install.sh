@@ -1,4 +1,5 @@
 cd ~
+sudo dnf install emacs
 rm -rf .emacs.d .emacs .spacemacs .spacemacs.d
 mkdir ~/.emacs.d
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
