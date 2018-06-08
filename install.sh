@@ -1,5 +1,7 @@
 cd ~
+mkdir ~/OhOh
 sudo dnf install emacs
+cd ~
 rm -rf .emacs.d .emacs .spacemacs .spacemacs.d
 mkdir ~/.emacs.d
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -13,10 +15,10 @@ git clone https://github.com/google/styleguide.git
 # rename the file
 mv styleguide google-style
 # return ~
-cd ~
+cd ~/OhOh
 git clone https://github.com/ZaJajn/spacemacs-private.git
 mkdir -p ~/.spacemacs.d/layers
-mv ~/spacemacs-private/init.el ~/.spacemacs.d/
+mv ~/OhOh/spacemacs-private/init.el ~/.spacemacs.d/
 cd ~
-rm -rf ~/spacemacs-private
-emacs --insecure
+rm -rf ~/OhOh
+emacs --insecure&
